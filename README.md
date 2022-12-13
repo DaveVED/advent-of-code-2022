@@ -2,7 +2,7 @@
 Advent of Code 2022. Written in python3.
 
 ## Testing
-You can test the outputs in the following ways.
+You can test the outputs in the following ways. To see all days completd, scroll down to the bottom.
 
 #### ./aoc/main.py
 You can execute `./aoc/main.py` python3 exectuable. Which will give you output to each Day i've completed and each part (each day has two parts). If something fails the basic `assert` statments will fail the program.
