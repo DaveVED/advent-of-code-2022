@@ -7,11 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run tests
+      - name: pre-build
+        run: |
+          sudo apt-get update
+          sudo apt-get install python3
+          sudo apt-get update
+          sudo apt-get install python3-pip
+          pip3 install pytest
+      - name: tests
         run: |
           python3 -m pytest test/
 
-          # Set the status of the build based on the test results
           if [ $? -ne 0 ]; then
             exit 1
           fi
