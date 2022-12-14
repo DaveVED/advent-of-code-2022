@@ -26,16 +26,17 @@ You can execute `./aoc/main.py` python3 exectuable. Which will give you output t
 You can run the PyTest `python3 -m pytest test/test_aoc.py` found in this file `./test/test_aoc.py` to get a more comprehensive output. But, for advent of code, this is overkill, as it runs a basic test on the given file. I wrote these to learn some more.
 
 ```
-(.venv) dave@Davids-MBP advent-of-code-2022 % python3 -m pytest test/test_aoc.py
+(.venv) dave@Davids-MBP advent-of-code-2022 % python3 -m pytest test/
 ============================= test session starts ==============================
 platform darwin -- Python 3.10.7, pytest-7.2.0, pluggy-1.0.0
 rootdir: /Users/dave/workspace/github/personal/advent-of-code-2022
-collected 1 item                                                               
+collected 10 items                                                             
 
-test/test_aoc.py .                                                       [100%]
+test/test_calorie_counting.py ...                                        [ 30%]
+test/test_rock_paper_scissors.py ...                                     [ 60%]
+test/test_rucksack.py ....                                               [100%]
 
-============================== 1 passed in 0.00s ===============================
-
+============================== 10 passed in 0.01s ==============================
 ```
 
 ## Completed Days
