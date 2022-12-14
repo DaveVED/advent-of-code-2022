@@ -1,7 +1,7 @@
 # advent-of-code-2022
 [![Actions Status](https://github.com/DaveVED/advent-of-code-2022/workflows/Tests/badge.svg)](https://github.com/DaveVED/<advent-of-code-2022/actions)
 
-Advent of Code 2022. All challenges written in python3. You can find all days (challenges) completed below under the ***Completed Days*** section. And how to test that, they acutally pass by executing the steps in teh ***Usage*** section.
+All challenges written in `python3`. You can find all days (challenges) completed below under the ***Completed Days*** section. And how to test that, they acutally pass by executing the steps in teh ***Usage*** section.
 
 ## Usage
 Every challenge has supporting `pytest` ensuring that the following is meet for *both parts* of every question.
@@ -50,7 +50,8 @@ The following Days have been completed.
 - [x] [--- Day 3: Rucksack Reorganization ---](https://adventofcode.com/2022/day/3)
 - [x] [--- Day 4: Camp Cleanup ---](https://adventofcode.com/2022/day/4)
 - [x] [--- Day 5: Supply Stacks ---](https://adventofcode.com/2022/day/5)
+- [ ] [--- Day 6: Tuning Trouble ---](https://adventofcode.com/2022/day/6)
 
 and a full list of challenges can be found [here](https://adventofcode.com/)
 
-***Number of Stars - 8***
+***Number of Stars - 10***
