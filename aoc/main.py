@@ -2,6 +2,7 @@
 import day1.calorie_counting as day1
 import day2.rock_paper_scissors as day2
 import day3.rucksack as day3
+import day4.camp_cleanup as day4
 
 CALORIE_COUNTING_ANSWER_PART1 = 70613
 CALORIE_COUNTING_ANSWER_PART2 = 205805
@@ -9,6 +10,8 @@ ROCK_PAPER_SCISSORS_ANSWER_PART1 = 14163
 ROCK_PAPER_SCISSORS_ANSWER_PART2 = 12091
 RUCKSACK_ANSWER_PART1 = 8515
 RUCKSACK_ANSWER_PART2 = 2434
+CAMP_CLEAN_UP_ANSWER_PART1 = 500
+CAMP_CLEAN_UP_ANSWER_PART2 = 815
 
 
 def main():
@@ -42,6 +45,16 @@ def main():
     badge_sum = day3.calculate_badge_sum("test/files/day3/input.txt")
     assert badge_sum == RUCKSACK_ANSWER_PART2
     print(f"--- PASS. Day 3. Part 2 Answer: {badge_sum} ---")
+
+    print(f"\n--- Day 4: Camp Cleanup ---")
+    fully_contain_count = day4.find_overlap_count(
+        "test/files/day4/input.txt", False)
+    assert fully_contain_count == CAMP_CLEAN_UP_ANSWER_PART1
+    print(f"--- PASS. Day 4. Part 1 Answer: {fully_contain_count} ---")
+    full_overlap_count = day4.find_overlap_count(
+        "test/files/day4/input.txt", True)
+    assert full_overlap_count == CAMP_CLEAN_UP_ANSWER_PART2
+    print(f"--- PASS. Day 4. Part 2 Answer: {full_overlap_count} ---")
 
 
 if __name__ == "__main__":
