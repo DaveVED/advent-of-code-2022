@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 import day1.calorie_counting as day1
 import day2.rock_paper_scissors as day2
+import day3.rucksack as day3
 
 CALORIE_COUNTING_ANSWER_PART1 = 70613
 CALORIE_COUNTING_ANSWER_PART2 = 205805
 ROCK_PAPER_SCISSORS_ANSWER_PART1 = 14163
 ROCK_PAPER_SCISSORS_ANSWER_PART2 = 12091
+RUCKSACK_ANSWER_PART1 = 8515
+RUCKSACK_ANSWER_PART2 = 2434
 
 
 def main():
@@ -29,6 +32,16 @@ def main():
         "test/files/day2/input.txt", True)
     assert rock_paper_scissors_score == ROCK_PAPER_SCISSORS_ANSWER_PART2
     print(f"--- PASS. Day 2. Part 2 Answer: {rock_paper_scissors_score} ---")
+
+    # Day 3: Day 3: Rucksack Reorganization
+    print("\n--- Day 3: Rucksack Reorganization ---")
+    priority_rucksack_sum = day3.calculate_rucksack_priority_sum(
+        "test/files/day3/input.txt")
+    assert priority_rucksack_sum == RUCKSACK_ANSWER_PART1
+    print(f"--- PASS. Day 3. Part 1 Answer: {priority_rucksack_sum} ---")
+    badge_sum = day3.calculate_badge_sum("test/files/day3/input.txt")
+    assert badge_sum == RUCKSACK_ANSWER_PART2
+    print(f"--- PASS. Day 3. Part 2 Answer: {badge_sum} ---")
 
 
 if __name__ == "__main__":

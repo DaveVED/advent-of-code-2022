@@ -1,6 +1,9 @@
 from typing import List
 
 
+from typing import List
+
+
 def build_elfs(file_path: str) -> List[List[int]]:
     with open(file_path, "r") as file:
         lines = file.readlines()

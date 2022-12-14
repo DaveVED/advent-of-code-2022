@@ -39,4 +39,5 @@ def calculate_rock_paper_scissors_score(file_path: str, part: bool) -> int:
                 opponenet_move, outcome = tuple(line.strip().split(" "))
                 match_score = guess_outcome_score(opponenet_move, outcome)
                 scores.append(match_score)
+
     return sum(scores)
