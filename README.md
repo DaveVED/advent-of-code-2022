@@ -1,49 +1,45 @@
 # advent-of-code-2022
 [![Actions Status](https://github.com/DaveVED/advent-of-code-2022/workflows/Tests/badge.svg)](https://github.com/DaveVED/<advent-of-code-2022/actions)
 
-Advent of Code 2022. Written in python3.
+Advent of Code 2022. All challenges written in python3. You can find all days (challenges) completed below under the ***Completed Days*** section. And how to test that, they acutally pass by executing the steps in teh ***Usage*** section.
 
-## Testing
-You can test the outputs in the following ways. To see all days completd, scroll down to the bottom.
+## Usage
+Every challenge has supporting `pytest` ensuring that the following is meet for *both parts* of every question.
 
-#### ./aoc/main.py
-You can execute `./aoc/main.py` python3 exectuable. Which will give you output to each Day i've completed and each part (each day has two parts). If something fails the basic `assert` statments will fail the program.
+- [x] Easy input data provided on Advent of code passes.
+- [x] Input data provided on Advent of coded passes.
+- [x] Any supporitng or helper functions have coverage.
 
-```
-(.venv) dave@Davids-MBP advent-of-code-2022 % ./aoc/main.py 
---- Day 1: Calorie Counting ---
---- PASS. Day 1. Part 1 Answer: 70613 ---
---- PASS. Day 1. Part 2 Answer: 205805 ---
-
---- Day 2: Rock Paper Scissors ---
---- PASS. Day 2. Part 1 Answer: 14163 ---
---- PASS. Day 2. Part 2 Answer: 12091 ---
-
---- Day 3: Rucksack Reorganization ---
---- PASS. Day 3. Part 1 Answer: 8515 ---
---- PASS. Day 3. Part 2 Answer: 2434 ---
-
---- Day 4: Camp Cleanup ---
---- PASS. Day 4. Part 1 Answer: 500 ---
---- PASS. Day 4. Part 2 Answer: 815 ---
-```
-
-#### ./test/
-You can run the PyTest `python3 -m pytest test` found in this file `./test/*` to get a more comprehensive output. But, for advent of code, this is overkill, as it runs a basic test on the given file. I wrote these to learn some more.
+You can execute all the tests by running `python3 -m pytest test/ `.
 
 ```
-(.venv) dave@Davids-MBP advent-of-code-2022 % python3 -m pytest test/
+(.venv) dave@Davids-MBP advent-of-code-2022 % python3 -m pytest test/          
 ============================= test session starts ==============================
 platform darwin -- Python 3.10.7, pytest-7.2.0, pluggy-1.0.0
 rootdir: /Users/dave/workspace/github/personal/advent-of-code-2022
-collected 11 items                                                             
+collected 13 items                                                             
 
-test/test_calorie_counting.py ...                                        [ 27%]
-test/test_camp_cleanup.py .                                              [ 36%]
-test/test_rock_paper_scissors.py ...                                     [ 63%]
-test/test_rucksack.py ....                                               [100%]
+test/test_calorie_counting.py ...                                        [ 23%]
+test/test_camp_cleanup.py .                                              [ 30%]
+test/test_rock_paper_scissors.py ...                                     [ 53%]
+test/test_rucksack.py ....                                               [ 84%]
+test/test_supply_stacks.py ..                                            [100%]
 
-============================== 11 passed in 0.01s ==============================
+============================== 13 passed in 0.01s ==============================
+```
+
+or a specific tests by targeting that test file `python3 -m pytest test/:file_name`.
+
+```
+(.venv) dave@Davids-MBP advent-of-code-2022 % python3 -m pytest test/test_supply_stacks.py -s
+============================= test session starts ==============================
+platform darwin -- Python 3.10.7, pytest-7.2.0, pluggy-1.0.0
+rootdir: /Users/dave/workspace/github/personal/advent-of-code-2022
+collected 2 items                                                              
+
+test/test_supply_stacks.py ..
+
+============================== 2 passed in 0.00s ===============================
 ```
 
 ## Completed Days
@@ -53,5 +49,8 @@ The following Days have been completed.
 - [x] [--- Day 2: Rock Paper Scissors ---](https://adventofcode.com/2022/day/2)
 - [x] [--- Day 3: Rucksack Reorganization ---](https://adventofcode.com/2022/day/3)
 - [x] [--- Day 4: Camp Cleanup ---](https://adventofcode.com/2022/day/4)
-- [ ] [--- Day 5: Supply Stacks ---](https://adventofcode.com/2022/day/5)
-***Number of Stars - 6***
+- [x] [--- Day 5: Supply Stacks ---](https://adventofcode.com/2022/day/5)
+
+and a full list of challenges can be found [here](https://adventofcode.com/)
+
+***Number of Stars - 8***
