@@ -3,7 +3,7 @@ name: Tests
 on: [push]
 
 jobs:
-  install:
+  pre-build:
     runs-on: ubuntu-latest
     steps:
       - name: Install Python 3
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: pre-build
+      - uses: ./.github/workflows/pre-build.yml
       - name: Run tests
         run: |
           python3 -m pytest test/
