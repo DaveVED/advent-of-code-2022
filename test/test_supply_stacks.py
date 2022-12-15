@@ -1,8 +1,19 @@
-import pytest
 import aoc.day5.supply_stacks as supply_stacks
 
 
+SUPPY_STACKS_PAR1_EASY = "CMZ"
+SUPPY_STACKS_PAR1_HARD = "WSFTMRHPP"
+SUPPLY_STACKS_PART2_EASY = "MCD"
+SUPPLY_STACKS_PART2_HARD = "GSLCMFBRP"
+
+
 def test_find_top_crates():
+    """Tests the find_top_crates function.
+
+    This function tests the find_top_crates function by calling it with a range
+    of different input values and verifying that the function returns the
+    expected results.
+    """
     assert supply_stacks.find_top_crates(
         "test/files/day5/input_easy.txt", False) == "CMZ"
     assert supply_stacks.find_top_crates(
@@ -16,6 +27,12 @@ def test_find_top_crates():
 
 
 def test_create_supply_stacks():
+    """Tests the create_supply_stacks_and_instructions function.
+
+    This function tests the create_supply_stacks_and_instructions function by
+    calling it with a range of different input values and verifying that the
+    function returns the expected results.
+    """
     crates, moves = supply_stacks.create_supply_stacks_and_instructions(
         "test/files/day5/input_easy.txt")
 
