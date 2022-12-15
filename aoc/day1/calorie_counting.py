@@ -2,6 +2,14 @@ from typing import List
 
 
 def build_elfs(file_path: str) -> List[List[int]]:
+    """Builds a list of lists of integers representing the elves and their calorie counts from the specified input file.
+
+    Args:
+        file_path: The path to the input file.
+
+    Returns:
+        A list of lists of integers representing the elves and their calorie counts.
+    """
     with open(file_path, "r") as file:
         lines = file.readlines()
 
@@ -22,6 +30,14 @@ def build_elfs(file_path: str) -> List[List[int]]:
 
 
 def find_richest_elf(elfs: List[List[int]]) -> int:
+    """Finds the elf with the highest total number of calories.
+
+    Args:
+        elfs: A list of lists of integers representing the elves and their calorie counts.
+
+    Returns:
+        An integer representing the total number of calories consumed by the richest elf.
+    """
     richest_elf = -1
     for elf in elfs:
         elf_total_calories = sum(elf)
@@ -31,6 +47,14 @@ def find_richest_elf(elfs: List[List[int]]) -> int:
 
 
 def find_top_3_elfs(elfs: List[List[int]]) -> int:
+    """Finds the elves with the top 3 highest total numbers of calories.
+
+    Args:
+        elfs: A list of lists of integers representing the elves and their calorie counts.
+
+    Returns:
+        An integer representing the total number of calories consumed by the top 3 richest elves.
+    """
     riches_elfs = []
     for elf in elfs:
         elf_total_calories = sum(elf)
