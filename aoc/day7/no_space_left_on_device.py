@@ -148,10 +148,19 @@ def find_matching_directories(file_system: FileSystem) -> int:
 
 
 def find_min_directory(file_system: FileSystem) -> int:
+    """Find the minimum size directory in the file system that can store at least 30 GB of data.
+
+    Args:
+        file_system: An instance of the FileSystem class.
+
+    Returns:
+        The minimum size directory in the file system that can store at least 30 GB of data.
+    """
     file_system.traverse_directory()
     sizes = []
 
     for size in file_system.sizes:
+        # Check if the directory has enough space to store at least 30 GB of data
         if 70000000 - file_system.root.size + size >= 30000000:
             sizes.append(size)
 

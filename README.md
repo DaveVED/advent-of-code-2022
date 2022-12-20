@@ -16,17 +16,17 @@ You can execute all the tests by running `python3 -m pytest test/ `.
 ============================= test session starts ==============================
 platform darwin -- Python 3.10.7, pytest-7.2.0, pluggy-1.0.0
 rootdir: /Users/dave/workspace/github/personal/advent-of-code-2022
-collected 14 items                                                             
+collected 19 items                                                             
 
-test/test_calorie_counting.py ..                                         [ 14%]
-test/test_camp_cleanup.py .                                              [ 21%]
-test/test_no_space_left_on_device.py .                                   [ 28%]
-test/test_rock_paper_scissors.py ...                                     [ 50%]
-test/test_rucksack.py ....                                               [ 78%]
-test/test_supply_stacks.py ..                                            [ 92%]
+test/test_calorie_counting.py ..                                         [ 10%]
+test/test_camp_cleanup.py .                                              [ 15%]
+test/test_no_space_left_on_device.py ......                              [ 47%]
+test/test_rock_paper_scissors.py ...                                     [ 63%]
+test/test_rucksack.py ....                                               [ 84%]
+test/test_supply_stacks.py ..                                            [ 94%]
 test/test_turning_trouble.py .                                           [100%]
 
-============================== 14 passed in 0.02s ==============================
+============================== 19 passed in 0.02s ==============================
 ```
 
 or a specific tests by targeting that test file `python3 -m pytest test/:file_name`.
