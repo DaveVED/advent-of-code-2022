@@ -12,21 +12,22 @@ Every challenge has supporting `pytest` ensuring that the following is meet for 
 You can execute all the tests by running `python3 -m pytest test/ `.
 
 ```
-(.venv) dave@Davids-MacBook-Pro advent-of-code-2022 % python3 -m pytest test/  
+(.venv) dave@Davids-MBP advent-of-code-2022 % python3 -m pytest test/          
 ============================= test session starts ==============================
 platform darwin -- Python 3.10.7, pytest-7.2.0, pluggy-1.0.0
 rootdir: /Users/dave/workspace/github/personal/advent-of-code-2022
-collected 19 items                                                             
+collected 20 items                                                             
 
 test/test_calorie_counting.py ..                                         [ 10%]
 test/test_camp_cleanup.py .                                              [ 15%]
-test/test_no_space_left_on_device.py ......                              [ 47%]
-test/test_rock_paper_scissors.py ...                                     [ 63%]
-test/test_rucksack.py ....                                               [ 84%]
-test/test_supply_stacks.py ..                                            [ 94%]
+test/test_no_space_left_on_device.py ......                              [ 45%]
+test/test_rock_paper_scissors.py ...                                     [ 60%]
+test/test_rucksack.py ....                                               [ 80%]
+test/test_supply_stacks.py ..                                            [ 90%]
+test/test_treetop_tree_house.py .                                        [ 95%]
 test/test_turning_trouble.py .                                           [100%]
 
-============================== 19 passed in 0.02s ==============================
+============================== 20 passed in 0.05s ==============================
 ```
 
 or a specific tests by targeting that test file `python3 -m pytest test/:file_name`.
@@ -53,8 +54,8 @@ The following Days have been completed.
 - [x] [--- Day 5: Supply Stacks ---](https://adventofcode.com/2022/day/5)
 - [x] [--- Day 6: Tuning Trouble ---](https://adventofcode.com/2022/day/6)
 - [x] [--- Day 7: No Space Left On Device ---](https://adventofcode.com/2022/day/7)
-- [ ] [--- Day 8: Treetop Tree House ---](https://adventofcode.com/2022/day/8)
-
+- [x] [--- Day 8: Treetop Tree House ---](https://adventofcode.com/2022/day/8)
+- [ ] [--- Day 9: Rope Bridge ---](https://adventofcode.com/2022/day/9)
 and a full list of challenges can be found [here](https://adventofcode.com/)
 
-***Number of Stars - 14***
+***Number of Stars - 16***
