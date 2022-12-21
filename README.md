@@ -56,6 +56,7 @@ The following Days have been completed.
 - [x] [--- Day 7: No Space Left On Device ---](https://adventofcode.com/2022/day/7)
 - [x] [--- Day 8: Treetop Tree House ---](https://adventofcode.com/2022/day/8)
 - [ ] [--- Day 9: Rope Bridge ---](https://adventofcode.com/2022/day/9)
-and a full list of challenges can be found [here](https://adventofcode.com/)
+
+A full list of challenges can be found [here](https://adventofcode.com/)
 
 ***Number of Stars - 16***
